@@ -1,0 +1,95 @@
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse"
+  role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand navbar-brand-center" href="index.html">
+        <img class="navbar-brand-logo navbar-brand-logo-normal" src="assets/images/pp-logo-white.svg"
+        title="Pride Pocket">
+      </a>
+    </div>
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+          <li class="nav-item dropdown">
+             <button type="button" class="btn btn-default btn-transparent btn-lg ">Log In</button>
+          </li>
+          <li class="nav-item dropdown"><a href="/theme/topbar/signup.html">
+            <button type="button" class="btn btn-default btn-lg">Join Now</button></a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+    </div>
+  </nav>
+     <!-- Page -->
+  <div class="page">
+    <div class="page-content container-fluid">
+    <div class="row">
+    <div class="col-md-4">
+    </div>
+      <div class="col-md-4">
+      <div class="panel signup-panel">
+        <div class="panel-body login-text">
+        <h1>Log in to Your Account</h1>
+        <h6>Don't Have an Account? <span><a href="#">Join Now!</a></span></h6>
+          <div class="row">
+            <div class="login-form-container">
+              <form class="login-form">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Email Address"
+                      autocomplete="off" />
+                    </div>
+
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="password" placeholder="Password"
+                      autocomplete="off" />
+
+                      <div class="checkbox-customcheckbox-primary show-password-wrap">
+                      <input type="checkbox" class="strength-toggle” title="Show/Hide Password" id="show_password">
+                      <label for="show_password" class="pw_text">Show Password</label></div>
+                    </div>
+
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary submit-btn">Log In</button>
+                    </div>
+
+                    <div class="or-divider">
+                      <span class="or-text">
+                      OR <!--Padding is optional-->
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <button type="button" class="btn btn-labeled btn-lg social-facebook signup-facebook">
+                        <span class="btn-label signup-facebook-icon">
+                        <i class="icon bd-facebook" aria-hidden="true"></i>
+                        </span>Log In with Facebook</button>
+                    </div>
+
+                  </form>
+            </div>
+            </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<!-- End Page -->
+<%= render 'form', user: @user %>
+
+<%= link_to 'Back', users_path %>
